@@ -1,0 +1,877 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    --base: #FfFfFf;
+    --primary: #1da1f2;
+    --secondary: #282828;
+    --p: 60px;
+    --m: 60px;
+    --shadow:  0px 0px 30px rgb(255 170 76 / 25%);
+    --font:  'Raleway', sans-serif;
+}
+
+
+  
+
+/* navbar strip */
+
+nav {
+    height: 2rem;
+    background-color: var(--base);
+    padding-left: var(--p);
+    padding-right: var(--p);
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: var(--secondary);
+}
+
+nav a:hover {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+nav #envelope {
+    font-size: 0.7rem !important;
+    color: var(--primary);
+}
+
+nav #mobile {
+    font-size: 1rem !important;
+    position: relative;
+    top: 0.1rem;
+    color: var(--primary);
+    padding-left: 0.5rem;
+}
+
+nav div {
+    display: inline-block;
+    height: 2rem;
+}
+
+nav .socialmedia {
+    float: right;
+}
+
+nav .socialmedia a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: var(--primary);
+    padding-right: 0.4rem;
+}
+
+nav .socialmedia a:hover {
+    color: var(--secondary);
+    transition: 0.5s;
+}
+
+
+/* navbar main */
+
+.navmain {
+    padding-left: var(--p);
+    padding-right: var(--p);
+    height: 3.7rem;
+    background-color: var(--base);
+    box-shadow: 0px -2px 15px rgb(255 170 76 / 10%);
+}
+.navbar-fixed {
+    top: 0;
+    z-index: 100000000000;
+  position: fixed;
+    width: 100%;
+    box-shadow: 0px 2px 15px rgb(255 170 76 / 20%);
+}
+
+.navmain img {
+    display: inline;
+    position: relative;
+    height: 3rem;
+    top: 16%;;
+}
+
+.navmain ul {
+    display: flex;
+    list-style: none;
+    float: right;
+    position: relative;
+    top: 25%;
+}
+
+.navmain a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.navmain ul li {
+    display: inline-block;
+    font-size: 0.75rem;
+    margin-right: 0.8rem;
+}
+
+.appointment {
+    background-color: var(--primary);
+    margin-right: 0rem !important;
+    width: 10rem;
+    font-family: 'Raleway', sans-serif;
+    height: 1.55rem;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    border-radius: 1.2rem;
+    line-height: 2;
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+.appointment:hover {
+    color: var(--base) !important;
+    background-color: var(--secondary);
+    border-bottom: 0px !important;
+    transition: 0.7s !important;
+}
+
+
+/* menubar */
+
+.navmain #menubar {
+    display: none;
+}
+.navmain #menubar1{
+    display: none;
+}
+.navmain ul li:hover {
+    border-bottom: 2px solid var(--primary);
+    color: var(--primary);
+    transition: 0.1s;
+}
+
+
+/*dropdown*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 55%;
+    background-color: var(--base);
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 0px 30px rgb(255 170 76 / 25%);
+    z-index: 1000000000;
+}
+
+.dropdown-content a {
+    color: var(--secondary);
+    padding: 0.6rem 0.8rem;
+    text-decoration: none;
+    display: block;
+    font-size: 0.8rem;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--primary);
+}
+
+.dropdown:hover li {
+    border-bottom: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/*menuitems*/
+
+#menuitems {
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    top: 6rem;
+    width: 90%;
+    z-index: 10000000;
+    box-shadow: 0px 0px 30px rgb(127 137 161 / 25%);
+    background-color: var(--secondary);
+}
+
+#menuitems a {
+    color: var(--primary);
+    padding: 0.6rem 0.8rem;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+/* footer main */
+
+.footer {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    
+    background-color: var(--secondary);
+}
+
+.contact {
+    height: calc(30vh - 1rem);
+    flex-basis: 32%;
+    border-right: 2px solid var(--primary);
+    margin: 0.5rem 0rem 0.5rem var(--m);
+    display: grid;
+    font-family: 'Raleway', sans-serif;
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 0rem;
+}
+
+.contact i {
+    font-size: 1.5rem;
+    color: var(--primary);
+    position: relative;
+    top: 10%;
+    cursor: pointer;
+}
+
+.contact i:hover {
+    color: var(--base);
+}
+
+.contact #p {
+    position: relative;
+    top: 20%;
+}
+
+.contact h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    position: relative;
+    top: 10%;
+    color: var(--primary);
+}
+
+.map {
+    flex-basis: 50%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    height: calc(30vh - 1rem);
+    border-right: 2px solid var(--primary);
+    padding: 0rem 0.5rem;
+}
+
+.map iframe {
+    box-shadow: 0px 2px 15px rgb(255 170 76 / 10%);
+    border-radius: 8px;
+}
+
+.name {
+    flex-basis: 18%;
+    height: calc(30vh - 2rem);
+    margin: 1rem var(--m) 1rem 1rem;
+    display: table;
+}
+
+.name .n {
+    height: calc(30vh - 2rem);
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.name h3 {
+    text-align: right;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+.name h4 {
+    text-align: right;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--primary);
+    padding-top: 0.5rem;
+}
+
+
+/* Main Section */
+
+.main {
+    height: calc(100vh - 5.7rem);
+}
+
+.main::after {
+    content: "";
+    position: absolute;
+    width: 65%;
+    height: calc(100vh - 5.7rem);
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.7), rgba(0,0,0,0));
+    backdrop-filter: saturate(180%) blur(0px);
+    z-index: 1;
+}
+
+
+/* On header */
+
+.onheader {
+    position: absolute;
+    top: 37%;
+    width: 45%;
+    left: var(--m);
+    z-index: 100000;
+}
+
+.onheader h1 {
+    font-family: 'Merienda', cursive;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    color: var(--primary);
+}
+
+.onheader h2 {
+    font-family: 'Merienda', cursive;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--base);
+}
+
+.onheader a {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    padding: 0.7rem 2rem;
+    border-radius: 1rem;
+    position: relative;
+    top: 1rem;
+    background-color: #000000;
+    color: var(--base);
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+}
+
+
+/*divbar style*/
+.helpdiv {
+    height: 20vh;
+}
+
+.divbar {
+    height: 40vh;
+    width: 100%;
+    z-index: 10000;
+    position: absolute;
+    top: 85%;
+}
+
+
+
+.divcontainer {
+    height: 9rem;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    margin: 0px var(--m);
+    display: flex;
+    box-shadow: 0px 4px 20px rgb(255 170 76 / 10%);
+}
+
+.c1 {
+    flex-basis: 25%;
+    padding: 1.5rem;
+}
+
+.c2 {
+    flex-basis: 25%;
+    padding: 1.5rem;
+}
+
+.c3 {
+    flex-basis: 25%;
+    padding: 1.5rem;
+}
+
+.c4 {
+    flex-basis: 25%;
+    padding: 1.5rem;
+}
+
+.divcontainer i {
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+    color: var(--primary);
+}
+
+.divcontainer h3 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.divcontainer h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.heading {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    padding: 2rem 0rem 1rem 0rem;
+}
+
+
+/* the aarati memorial*/
+
+.theaarti {
+    display: flex;
+    height: 60vh;
+    padding: var(--p);
+}
+
+.theaarti .a1 {
+    flex-basis: 50%;
+    display: table;
+}
+
+.a1 p {
+    font-size: 0.9rem;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.more {
+    color: var(--primary);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.more:hover {
+    color: var(--secondary);
+    transition: 0.5s;
+}
+
+.theaarti .a2 {
+    flex-basis: 50%;
+    padding-left: var(--p);
+    display: table;
+}
+
+.a2 div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.a2 .youtube {
+    height: 13rem;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+
+
+
+/* activity and achievments styling */
+
+.activity {
+    width: 100%;
+    padding: var(--p);
+}
+
+.item {
+    
+    height: 35vh;
+    border-radius: 5%;
+    width: 90%;
+}
+/* activity and achievments card flip styling */
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    
+}
+
+.item:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
+.flip-card-front {
+    background-color: #FfFfFf;
+    box-shadow: 0px 4px 10px 3px rgb(255 170 76 / 10%);
+    border-top: 2px solid var(--primary);
+}
+.flip-card-front img{
+    height: 100%;
+}
+
+.flip-card-back {
+    background-color: #ffffff;
+    color: black;
+    transform: rotateY(180deg);
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+}
+
+/* about us page css */
+
+.image_header{
+    height: 30vh;
+    background: url("https://theadhyyan.edu.in/wp-content/uploads/2021/03/IMG_9088.jpg") no-repeat center center/cover;
+}
+.content{
+    height: 100vh;
+    
+    display: flex;
+}
+.content_heading{
+flex-basis: 30%;
+background-color: var(--secondary);
+padding: var(--p);
+padding-right: 0;
+display: table;
+}
+.content_heading div{
+    display: table-cell;
+    vertical-align: middle;
+}
+.content_heading div h3{
+    padding: 1rem 0.5rem;
+font-family: var(--font);
+color: whitesmoke;
+cursor: pointer;
+}
+.content_heading div #a{
+    background-color: var(--primary);
+    color:var(--secondary);
+}
+.content_info{
+    flex-basis: 70%;
+    padding: var(--p);
+    display: table;
+}
+.content_info div{
+    display: table-cell;
+    vertical-align: middle;
+}
+.content_info #founder, #principle, #mission, #award{
+    display: none;
+}
+/* enquiry form  */
+    
+
+.formcontain {
+    display: flex;
+    height: 55vw;
+    width: 80%;
+    margin: 5rem;
+    margin-top: 1rem;
+    box-shadow: 0px 4px 20px rgb(63, 63, 63);
+    font-family: 'Raleway', sans-serif;
+    border-radius: 6px;
+}
+
+.sidebar {
+    width: 30%;
+    height: 100%;
+    background-color: #f99245;
+    border-radius: 6px;
+}
+
+.sidebar img {
+    margin-top: 10%;
+}
+
+.sidebar h1 {
+    margin-top: 2rem;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 1rem;
+    text-shadow: 1px 1px 1px rgb(87, 87, 87);
+}
+
+.mainform {
+    width: 100%;
+}
+
+.textarea {
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+.label {
+    font-size: large;
+    font-weight: bolder;
+}
+
+.entry {
+    width: 70%;
+    border-radius: 4px;
+    margin-top: .5rem;
+    border: 1px solid #282828;
+    padding: .5rem;
+    font-size: x-small;
+}
+
+.submitbtn {
+    background-color: #f99245;
+    font-size: small;
+    margin-left: 35%;
+    padding: .5rem;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    border: 1px solid #282828;
+    border-radius: 4px;
+}
+
+.submitbtn:hover {
+    background-color: #282828;
+    color: #f8f8f8;
+    font-size: small;
+    cursor: pointer;
+}
+/* notice board */
+.notice{
+    height: 80vh;
+  
+    
+    padding: var(--p);
+    padding-right: 0;
+    display: flex;
+}
+.bday{
+    flex-basis: 50%;
+    
+}
+.bday img{
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+.bday h4{
+    text-align: center;
+    padding: 5px 0px;
+    font-family: 'Merienda', cursive;
+  
+}
+
+.news{
+    flex-basis: 50%;
+    border-radius: 4px;
+    padding: var(--p);
+    padding-top: 2rem;
+    padding-right: 0;
+    background-color: var(--secondary);
+}
+.news h5{
+    display: inline;
+    color: var(--primary);
+    font-family: 'Merienda', cursive;
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    padding: 0.2rem;
+    line-height: 2.5;
+}
+.news h6{
+    display: inline;
+    color: var(--base);
+    padding:0.4rem;
+    font-family: var(--font);
+    font-weight: 400;
+    
+}
+.news sup{
+    color: var(--base);
+    font-size: 10px;
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    position: relative;
+    animation: abhi 1s ease-in infinite;
+}
+@keyframes abhi {
+    0%{
+        top:0
+    }
+    25%{
+        top:1px;
+
+        }
+    50%{
+        top: 2px;
+    }
+    75%{
+        top: 1px;
+    }
+    100%{
+        top: 0;
+    }
+    
+}
+.news button{
+    cursor: pointer;
+    background-color: var(--primary);
+    border-radius: 5px;
+    border: 0;
+    padding:5px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* our partner */
+.partner{
+    height: 30vh;
+    padding: var(--p);
+}
+
+/* gallery */
+
+.galleryborder {
+    height: 50vh;
+    background-color: #ffffff;
+    border: 1px solid rgb(165, 165, 165);
+    margin: 1.5rem 1rem;
+    box-shadow: var(--shadow);
+    border-radius: 6px;
+}
+
+.gallery {
+    height: 50vh;
+    padding: 1rem;
+}
+
+.gallerybtncontainer {
+    padding-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.gallerybutton {
+    font-size: small;
+    font-weight: bold;
+    padding: .5rem 1rem;
+
+    cursor: pointer;
+    border: none;
+    font-size: 0.7rem;
+    font-family: 'Raleway';
+    color: black;
+    background-color:#C8C8C8;
+}
+
+
+#imagebutton{
+    border-radius: 8px 0px 0px 8px;
+    border-right: 1px solid ;
+    background-color: var(--primary);
+
+}
+#videobutton{
+    border-radius: 0px 8px 8px 0px;
+    
+}
+
+.students {
+    width: 100%;
+    height: 37vh;
+}
+
+.students img {
+    height: 37vh;
+    padding: 0px 5px;
+    border-radius: 8px;
+}
+
+.students .youtube {
+    width: 100%;
+    height: 35vh;
+    padding: 0px 5px;
+    border-radius: 8px;
+}
+
+#videos {
+    display: none;
+}
+
+#gallery .owl-carousel .owl-next {
+    background-color: #f99245;
+    width: 1.5rem;
+    font-weight: bold;
+}
+
+#gallery .owl-carousel .owl-next:hover {
+    background-color: #282828;
+    width: 1.5rem;
+    font-weight: bold;
+}
+
+#gallery .owl-carousel .owl-prev {
+    background-color: #f99245;
+    width: 1.5rem;
+    font-weight: bold;
+}
+
+#gallery .owl-carousel .owl-prev:hover {
+    background-color: #282828;
+    width: 1.5rem;
+    font-weight: bold;
+}
+
+.seemore {
+    float: right;
+    font-size: 0.7rem;
+    line-height: 1.5;
+    font-weight: bold;
+  font-family: 'Raleway';
+    padding: 0rem .5rem 0rem .5rem;
+    cursor: pointer;
+    background-color: #f99245;
+    border: 1px solid #282828;
+    border-radius: 4px;
+}
+
+.seemore:hover {
+    background-color: #282828;
+    color: #FfFfFf;
+}
+
+/* campus page */
+
+    .photos .im{
+        height: 10rem;
+  border-radius: 8px;
+       margin: 4px;
+        
+    }
+    #content_in div{
+        vertical-align: baseline !important;
+        text-align: center;
+    }

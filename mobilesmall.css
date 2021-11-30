@@ -1,0 +1,50 @@
+@media only screen and (max-width: 375px) {
+    * {
+        --p: 20px;
+        --m: 20px;
+    }
+    nav {
+        text-align: center;
+    }
+    nav .socialmedia {
+        display: none;
+    }
+    .onheader {
+        left: var(--p);
+        width: 90%;
+    }
+    .helpdiv {
+        height: 17rem;
+    }
+    .divcontainer {
+        height: 20rem;
+    }
+   
+   
+    .footer {
+        height: 72vh;
+    }
+    .name .n {
+        height: 10vh;
+    }
+    .news {
+        height: auto;
+    }
+    .news .n1 {
+        grid-template-columns: 2fr 9fr;
+    }
+    .n1 .date {
+        padding-top: 0.3rem;
+    }
+    .formcontain {
+        height: 130vw;
+        
+    }
+    .sidebar h1{
+        font-size: 0.6rem;
+    }
+    .photos .im{
+        height: 10rem;
+        width: 90%;
+    }
+}

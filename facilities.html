@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="mobilesmall.css">
+    <!-- owl crousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.green.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!--Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!--Font awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <title>Facilities</title>
+    <style>
+        #content{
+            height:auto;
+        }
+        </style>
+
+</head>
+
+<body>
+       <!--Navbar Strip -->
+       <nav>
+        <div>
+            <i class="fa fa-envelope" id="envelope"></i>
+            <a href="mailto:aartimemorial@yahoo.com">aartimemorial@yahoo.com
+            </a>
+        </div>
+        <div>
+            <i class="fa fa-mobile" id="mobile"></i>
+            <a href="tel:+918923078672">+91 8923078672</a>
+        </div>
+        <div class="socialmedia">
+            <a href=""><i class="fa fa-facebook-official" ></i></a>
+            <a href=""><i class="fa fa-instagram" ></i></a>
+            <a href=""><i class="fa fa-youtube-play" ></i></a>
+
+        </div>
+    </nav>
+    <!-- nav main -->
+    <div class="navmain" id="navmain">
+        <img src="images/logo.png">
+
+        <ul>
+            <a href="index.php">
+                <li>Home</li>
+            </a>
+            <a href="about.html">
+                <li>About Us</li>
+            </a>
+            <div class="dropdown">
+                <a href="">
+                    <li>Academics <i class="fa fa-angle-down"></i></li>
+                </a>
+                <div class="dropdown-content">
+                    <a href="academic.html">Curriculum</a>
+                    <a href="academic.html">The Kindergarten</a>
+                    <a href="academic.html">Primary Section</a>
+                    <a href="academic.html">Secondary & Senior Secondary Section</a>
+                    <a href="academic.html">Faculties</a>
+                    <a href="academic.html">Carrier Guidence Cell</a>
+                    <a href="academic.html">Houses</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="">
+                    <li>Facalities <i class="fa fa-angle-down"></i></li>
+                </a>
+                <div class="dropdown-content" style="right: 45%;">
+                    <a href="facilities.html">ATL Lab</a>
+                    <a href="facilities.html">Science Lab</a>
+                    <a href="facilities.html">Coding Club</a>
+                    <a href="facilities.html">Sport Club</a>
+                    <a href="facilities.html">Personality Development Trainings</a>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="">
+                    <li>Rules & Regulation <i class="fa fa-angle-down"></i></li>
+                </a>
+                <div class="dropdown-content" style="right: 33%;">
+                    <a href="rules.html">School Policy & timings</a>
+                    <a href="rules.html">Exam Policy</a>
+                    <a href="rules.html">Academics Calender</a>
+
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="">
+                    <li>Campus <i class="fa fa-angle-down"></i> </li>
+                </a>
+                <div class="dropdown-content" style="right: 22%;">
+                    <a href="campus.php">Photos</a>
+                    <a href="campus.php">Videos</a>
+
+
+                </div>
+            </div>
+
+            <a href="admission.php">
+                <li class="appointment">Admission Enquiry</li>
+            </a>
+        </ul>
+
+        <div id="menuitems">
+            <a href="index.php">Home</a>
+            <a href="about.html">About</a>
+            <a href="academic.html">Academics <i class="fa fa-angle-right"></i></a>
+            <a href="facilities.html">Facalities <i class="fa fa-angle-right"></i></a>
+            <a href="rules.html">Rules & Regulation <i class="fa fa-angle-right"></i></a>
+            <a href="campus.php">Campus <i class="fa fa-angle-right"></i></a>
+            <a href="admission.php" style="color: whitesmoke; background-color: var(--primary)">Admission Enquiry </a>
+        </div>
+
+        <i class="fa fa-bars" onclick="myfunction()" id="menubar"></i>
+        <i class="fa fa-times" onclick="myfunctions()" id="menubar1"></i>
+      
+    </div>
+    <!-- Navbar done -->
+<!-- image header -->
+<div class="image_header">
+
+</div>
+<div class="content" id="content">
+<div class="content_heading">
+<div>
+    <h3 id="a" onclick="a()">ATL Lab</h3>
+    <h3 id="f" onclick="f()">Coding Club</h3>
+    <h3 id="p" onclick="p()">Sport Club</h3>
+    <h3 id="m" onclick="m()">Science Lab</h3>
+    <h3 id="aw" onclick="aw()">Personality development training </h3>
+    
+</div>
+</div>
+<div class="content_info">
+<div id="aarti">
+    ATL is a work space where young minds can give shape to their ideas through hands on do-it-yourself mode; and learn innovation skills. Young children will get a chance to work with tools and equipment to understand the concepts of STEM (Science, Technology, Engineering and Math). ATL would contain educational and learning ‘do it yourself’ kits and equipment on – science, electronics, robotics, open source microcontroller boards, sensors and 3D printers and computers. Other desirable facilities include meeting rooms and video conferencing facility.
+
+In order to foster inventiveness among students, ATL can conduct different activities ranging from regional and national level competitions, exhibitions, workshops on problem solving, designing and fabrication of products, lecture series etc. at periodic intervals.
+
+<div id="aarti" class="photos">
+<img class="im" src="images/main page/RIA_7190.jpg">
+<img class="im" src="images/main page/3.jpg">
+<img class="im" src="images/main page/11.jpg">
+<img class="im" src="images/main page/12.jpg">
+<img class="im" src="images/main page/13.jpg">
+    </div>
+</div>
+<div id="founder"> Our Philosophy
+    Coding Club is for everyone, regardless of their career stage or current level of knowledge. Coding Club is a place that brings people together, regardless of their gender or background. We all have the right to learn, and we believe learning is more fun and efficient when we help each other along the way.
+</div>
+<div id="principle">
+    Aarti Sports Clubs give a student a stage to excel. With proper trials and procedures and interviews which anyone can apply for, student’s talent is identified and welcomed to get brushed - Students' Welfare takes care of all be it sports, culture, NCC or NSS in all aspects from school to national level. Two national level fests CHORUS & OJASVAT promote culture and sports.
+    <div id="aarti" class="photos">
+        
+        <img class="im" src="images/main page/4.jpg">
+        <img class="im" src="images/main page/14.jpg">
+        <img class="im" src="images/main page/15.jpg">
+        <img class="im" src="images/main page/16.jpg">
+            </div>
+
+</div>
+<div id="mission">
+    Science lab equipment allows students to interact directly with the data gathered. They get a first-hand learning experience by performing various experiments on their own. ... It is also found that school science lab equipment and supplies make teaching and learning easy both for the teachers, as well as for the students.
+    <div id="aarti" class="photos">
+        
+        <img class="im" src="https://www.pallikkutam.com/uploads/news_images/1525422800.jpg">
+      
+            </div>
+</div>
+<div id="award">
+    The world-renowned phenomenon of Hawthorne Effect demonstrates that an individual’s working behavior is highly influenced by the kind of physical environment he or she is placed in. Aarti Memorial Group of Schools makes continuous efforts to take care of such influences that are directly related to student’s overall well being, by creating amicable ambiences.
+
+</div>
+</div>
+</div>
+    
+    <!-- footer main -->
+      <!-- footer -->
+      <div class="footer ">
+        <div class="contact ">
+            <i class="fa fa-map-marker " id="l " aria-hidden="true "></i>
+            <h3>Rajpur Chajpur Khandla Bhudana Muzaffarnagar U.P.</h3>
+            <i class="fa fa-phone " aria-hidden="true " id="p"></i>
+            <h3 id="p">+91 8923078672</h3>
+            <i class="fa fa-envelope-open " aria-hidden="true "></i>
+            <h3>&nbsp;aartimemorial@yahoo.com</h3>
+     </div>
+        <div class="map ">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3479.4552555820455!2d77.36216601442402!3d29.298318660387473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c30bcfe7c4ee5%3A0xe1be045cd4f8385a!2sARATI%20MEMORIAL%20PUBLIC%20SCHOOL!5e0!3m2!1sen!2sin!4v1629129692060!5m2!1sen!2sin "
+                width="100% " height="100% " style="border:0; " allowfullscreen=" " loading="lazy "></iframe>
+        </div>
+        <div class="name ">
+            <div class="n ">
+                <h3>Aarti Memorial Public School</h3>
+                <h4>Affiliation No. 2131805</h4>
+            </div>
+        </div>
+        <div>
+    
+        </div>
+    </div>
+</body>
+<script>
+    function myfunction() {
+        document.getElementById('menuitems').style.display = 'block';
+        document.getElementById('menubar').style.display = 'none';
+        document.getElementById('menubar1').style.display = 'block';
+    }
+    
+    function myfunctions() {
+        document.getElementById('menuitems').style.display = 'none';
+        document.getElementById('menubar').style.display = 'block';
+        document.getElementById('menubar1').style.display = 'none';
+    }
+    
+        $(document).ready(function() {
+    
+    $(window).scroll(function () { 
+    
+    console.log($(window).scrollTop());
+    
+    if ($(window).scrollTop() > 10) {
+      $('#navmain').addClass('navbar-fixed');
+      document.getElementById('menubar').style.top = '1.2rem';
+      document.getElementById('menubar1').style.top = '1.2rem';
+      document.getElementById('menuitems').style.top = '4rem';
+    }
+    else{
+    $('#navmain').removeClass('navbar-fixed');
+    document.getElementById('menubar').style.top = '3.1rem';
+    document.getElementById('menubar1').style.top = '3.1rem';
+    document.getElementById('menuitems').style.top = '6rem';
+    }
+    
+    });
+    });
+    </script>
+<script>
+    function myfunction() {
+        document.getElementById('menuitems').style.display = 'block';
+        document.getElementById('menubar').style.display = 'none';
+        document.getElementById('menubar1').style.display = 'block';
+    }
+
+    function myfunctions() {
+        document.getElementById('menuitems').style.display = 'none';
+        document.getElementById('menubar').style.display = 'block';
+        document.getElementById('menubar1').style.display = 'none';
+    }
+</script>
+<script>
+    function a(){
+        document.getElementById('f').style.cssText ='background-color: transparent; color:whitesmoke';
+        document.getElementById('a').style.cssText = 'background-color: var(--primary);color:var(--secondary)' ;
+        document.getElementById('p').style.cssText ='background-color: transparent; color:whitesmoke';
+        document.getElementById('m').style.cssText ='background-color: transparent; color:whitesmoke';
+        document.getElementById('aw').style.cssText ='background-color: transparent; color:whitesmoke';
+
+  document.getElementById('founder').style.display = 'none';
+  document.getElementById('aarti').style.display ='block';
+  document.getElementById('principle').style.display = 'none';
+  document.getElementById('mission').style.display = 'none';
+  document.getElementById('award').style.display = 'none';
+    }
+    function f(){
+        document.getElementById('a').style.cssText ='background-color: transparent; color:whitesmoke';
+        document.getElementById('f').style.cssText = 'background-color: var(--primary);color:var(--secondary)' ;
+        document.getElementById('p').style.cssText ='background-color: transparent; color:whitesmoke';
+        document.getElementById('m').style.cssText ='background-color: transparent; color:whitesmoke';
+        document.getElementById('aw').style.cssText ='background-color: transparent; color:whitesmoke';
+ 
+  document.getElementById('aarti').style.display = 'none';
+  document.getElementById('founder').style.display ='block';
+  document.getElementById('principle').style.display = 'none';
+  document.getElementById('mission').style.display = 'none';
+  document.getElementById('award').style.display = 'none';
+  }
+  function p(){
+    document.getElementById('a').style.cssText ='background-color: transparent; color:whitesmoke';
+        document.getElementById('p').style.cssText = 'background-color: var(--primary);color:var(--secondary)' ;
+        document.getElementById('f').style.cssText ='background-color: transparent; color:whitesmoke';
+        document.getElementById('m').style.cssText ='background-color: transparent; color:whitesmoke';
+        document.getElementById('aw').style.cssText ='background-color: transparent; color:whitesmoke';
+  
+        document.getElementById('aarti').style.display = 'none';
+   document.getElementById('principle').style.display ='block';
+  document.getElementById('founder').style.display = 'none';
+  document.getElementById('mission').style.display = 'none';
+  document.getElementById('award').style.display = 'none';
+  }
+  function m(){
+    document.getElementById('a').style.cssText ='background-color: transparent; color:whitesmoke';
+        document.getElementById('m').style.cssText = 'background-color: var(--primary);color:var(--secondary)' ;
+        document.getElementById('p').style.cssText ='background-color: transparent; color:whitesmoke';
+        document.getElementById('f').style.cssText ='background-color: transparent; color:whitesmoke';
+        document.getElementById('aw').style.cssText ='background-color: transparent; color:whitesmoke';
+  
+        document.getElementById('aarti').style.display = 'none';
+  document.getElementById('mission').style.display ='block';
+  document.getElementById('principle').style.display = 'none';
+  document.getElementById('founder').style.display = 'none';
+  document.getElementById('award').style.display = 'none';
+  }
+  function aw(){
+    document.getElementById('a').style.cssText ='background-color: transparent; color:whitesmoke';
+        document.getElementById('aw').style.cssText = 'background-color: var(--primary);color:var(--secondary)' ;
+        document.getElementById('p').style.cssText ='background-color: transparent; color:whitesmoke';
+        document.getElementById('m').style.cssText ='background-color: transparent; color:whitesmoke';
+        document.getElementById('f').style.cssText ='background-color: transparent; color:whitesmoke';
+ 
+        document.getElementById('aarti').style.display = 'none';
+   document.getElementById('award').style.display ='block';
+  document.getElementById('principle').style.display = 'none';
+  document.getElementById('mission').style.display = 'none';
+  document.getElementById('founder').style.display = 'none';
+  }
+</script>
+<script>
+    $(document).ready(function() {
+  
+  $(window).scroll(function () { 
+
+    console.log($(window).scrollTop());
+
+    if ($(window).scrollTop() > 10) {
+      $('#navmain').addClass('navbar-fixed');
+    }
+else{
+    $('#navmain').removeClass('navbar-fixed');
+}
+   
+  });
+});
+</script>
+</html>

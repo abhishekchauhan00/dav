@@ -1,0 +1,63 @@
+@media only screen and (max-width: 1024px){
+    .photos .im{
+        height: 9rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    * {
+        --p: 40px;
+        --m: 40px;
+        font-size: 16px;
+    }
+    .navmain ul {
+        display: none;
+    }
+    .navmain #menubar {
+        display: block;
+        position: absolute;
+        top: 3.1rem;
+        color: var(--primary);
+        font-size: 1.5rem;
+        right: var(--p);
+    }
+    .navmain #menubar1 {
+        display: none;
+        position: absolute;
+        top: 3.1rem;
+        color: var(--primary);
+        font-size: 1.5rem;
+        right: var(--p);
+    }
+    .name h4 {
+        font-size: 0.8rem;
+    }
+    .news {
+        height: 80vh;
+    }
+    .news .n1 {
+        grid-template-columns: 1.5fr 8.5fr;
+    }
+    .n1 .date {
+        padding-top: 1rem;
+    }
+    /* acitivity and achievements responsive.*/
+   
+    .item {
+        width: 70%;
+    }
+    .content {
+        height: auto;
+    }
+    /* admission form responsive.*/
+    .formcontain {
+        height: 80vw;
+    }
+    .label {
+        font-size: small;
+        font-weight: bolder;
+    }
+    .submitbtn {
+        margin-left: 30%;
+    }
+}
