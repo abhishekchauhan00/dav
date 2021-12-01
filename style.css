@@ -507,9 +507,7 @@ nav .socialmedia a:hover {
     
 }
 
-.item:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
+
 
 .flip-card-front,
 .flip-card-back {
@@ -822,7 +820,7 @@ cursor: pointer;
 }
 
 #gallery .owl-carousel .owl-next {
-    background-color: #f99245;
+    background-color:var(--primary);
     width: 1.5rem;
     font-weight: bold;
 }
@@ -834,7 +832,7 @@ cursor: pointer;
 }
 
 #gallery .owl-carousel .owl-prev {
-    background-color: #f99245;
+    background-color:var(--primary);
     width: 1.5rem;
     font-weight: bold;
 }
@@ -853,7 +851,7 @@ cursor: pointer;
   font-family: 'Raleway';
     padding: 0rem .5rem 0rem .5rem;
     cursor: pointer;
-    background-color: #f99245;
+    background-color:var(--primary);
     border: 1px solid #282828;
     border-radius: 4px;
 }
