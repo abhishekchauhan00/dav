@@ -21,12 +21,16 @@
     <!--Font awesome icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
-    <title>Rules & Regulations</title>
+    <title>Campus</title>
+    <style>
+        #content{
+            height:auto;
+        }
+        </style>
 
 </head>
 
-<body>
-   <!--Navbar Strip -->
+<body> <!--Navbar Strip -->
  <nav>
     <div>
         <i class="fa fa-envelope" id="envelope"></i>
@@ -129,35 +133,35 @@
 <!-- Navbar done -->
 <!-- image header -->
 <div class="image_header">
-<h1>RULES & REGULATIONS</h1>
+<h1>CAMPUS</h2>
 </div>
-<div class="content">
+<div class="content" id="content">
 <div class="content_heading">
 <div>
-    <h3 id="a" onclick="a()">School policy & timing</h3>
-    <h3 id="f" onclick="f()">Exam policy</h3>
-    <h3 id="p" onclick="p()">Academic Calender</h3>
+    <h3 id="a" onclick="a()">Photos</h3>
+    <h3 id="f" onclick="f()">Videos</h3>
+   
     
 </div>
 </div>
-<div class="content_info">
-<div id="aarti">
-   
+<div class="content_info" id="content_in">
+<div id="aarti" class="photos">
+<img class="im" src="https://i.ibb.co/TtFKsq9/b-2.jpg">
+<img class="im" src="https://i.ibb.co/y51hLwx/b-3.jpg">
+<img class="im" src="https://i.ibb.co/CwTPW05/b-4.jpg">
+<img class="im" src="https://i.ibb.co/MP4BjQ5/b-5.jpg">
 </div>
-<div id="founder"> 
+<div id="founder" class="photos">
+    <iframe class="im" src="https://www.youtube.com/embed/oz1PhT4cqG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="im" src="https://www.youtube.com/embed/oz1PhT4cqG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="im" src="https://www.youtube.com/embed/oz1PhT4cqG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="im" src="https://www.youtube.com/embed/oz1PhT4cqG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="im" src="https://www.youtube.com/embed/oz1PhT4cqG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-<div id="principle">
-  
-</div>
-<div id="mission">
-    The school management is committed to provide all sauvity and pleasantness for the students, the Principal with his team of diligent, devoted and sincere teachers. All are set to take the school at greater heights.
-</div>
-<div id="award">
 
 </div>
 </div>
-</div>
-   <!-- footer -->
+    <!-- footer -->
 <div class="footer ">
     <div class="contact ">
         <i class="fa fa-map-marker " id="l " aria-hidden="true "></i>
@@ -184,100 +188,61 @@
 <!-- footer close -->
 </body>
 <script>
-    function myfunction() {
-        document.getElementById('menuitems').style.display = 'block';
-        document.getElementById('menubar').style.display = 'none';
-        document.getElementById('menubar1').style.display = 'block';
-    }
+function myfunction() {
+    document.getElementById('menuitems').style.display = 'block';
+    document.getElementById('menubar').style.display = 'none';
+    document.getElementById('menubar1').style.display = 'block';
+}
 
-    function myfunctions() {
-        document.getElementById('menuitems').style.display = 'none';
-        document.getElementById('menubar').style.display = 'block';
-        document.getElementById('menubar1').style.display = 'none';
-    }
+function myfunctions() {
+    document.getElementById('menuitems').style.display = 'none';
+    document.getElementById('menubar').style.display = 'block';
+    document.getElementById('menubar1').style.display = 'none';
+}
+
+    $(document).ready(function() {
+
+$(window).scroll(function () { 
+
+console.log($(window).scrollTop());
+
+if ($(window).scrollTop() > 10) {
+  $('#navmain').addClass('navbar-fixed');
+  document.getElementById('menubar').style.top = '1.2rem';
+  document.getElementById('menubar1').style.top = '1.2rem';
+  document.getElementById('menuitems').style.top = '4rem';
+}
+else{
+$('#navmain').removeClass('navbar-fixed');
+document.getElementById('menubar').style.top = '3.1rem';
+document.getElementById('menubar1').style.top = '3.1rem';
+document.getElementById('menuitems').style.top = '6rem';
+}
+
+});
+});
 </script>
+<script src="aarti.js"></script>
 <script>
     function a(){
         document.getElementById('f').style.cssText ='background-color: transparent; color:whitesmoke';
         document.getElementById('a').style.cssText = 'background-color: var(--primary);color:var(--secondary)' ;
-        document.getElementById('p').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('m').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('aw').style.cssText ='background-color: transparent; color:whitesmoke';
-
+       
+        document.getElementById('content').style.cssText='height: auto';
   document.getElementById('founder').style.display = 'none';
   document.getElementById('aarti').style.display ='block';
-  document.getElementById('principle').style.display = 'none';
-  document.getElementById('mission').style.display = 'none';
-  document.getElementById('award').style.display = 'none';
+ 
     }
     function f(){
         document.getElementById('a').style.cssText ='background-color: transparent; color:whitesmoke';
         document.getElementById('f').style.cssText = 'background-color: var(--primary);color:var(--secondary)' ;
-        document.getElementById('p').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('m').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('aw').style.cssText ='background-color: transparent; color:whitesmoke';
- 
+       
+        document.getElementById('content').style.cssText='height: auto';
   document.getElementById('aarti').style.display = 'none';
   document.getElementById('founder').style.display ='block';
-  document.getElementById('principle').style.display = 'none';
-  document.getElementById('mission').style.display = 'none';
-  document.getElementById('award').style.display = 'none';
-  }
-  function p(){
-    document.getElementById('a').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('p').style.cssText = 'background-color: var(--primary);color:var(--secondary)' ;
-        document.getElementById('f').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('m').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('aw').style.cssText ='background-color: transparent; color:whitesmoke';
-  
-        document.getElementById('aarti').style.display = 'none';
-   document.getElementById('principle').style.display ='block';
-  document.getElementById('founder').style.display = 'none';
-  document.getElementById('mission').style.display = 'none';
-  document.getElementById('award').style.display = 'none';
-  }
-  function m(){
-    document.getElementById('a').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('m').style.cssText = 'background-color: var(--primary);color:var(--secondary)' ;
-        document.getElementById('p').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('f').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('aw').style.cssText ='background-color: transparent; color:whitesmoke';
-  
-        document.getElementById('aarti').style.display = 'none';
-  document.getElementById('mission').style.display ='block';
-  document.getElementById('principle').style.display = 'none';
-  document.getElementById('founder').style.display = 'none';
-  document.getElementById('award').style.display = 'none';
-  }
-  function aw(){
-    document.getElementById('a').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('aw').style.cssText = 'background-color: var(--primary);color:var(--secondary)' ;
-        document.getElementById('p').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('m').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('f').style.cssText ='background-color: transparent; color:whitesmoke';
- 
-        document.getElementById('aarti').style.display = 'none';
-   document.getElementById('award').style.display ='block';
-  document.getElementById('principle').style.display = 'none';
-  document.getElementById('mission').style.display = 'none';
-  document.getElementById('founder').style.display = 'none';
-  }
-</script>
-<script>
-    $(document).ready(function() {
-  
-  $(window).scroll(function () { 
 
-    console.log($(window).scrollTop());
-
-    if ($(window).scrollTop() > 10) {
-      $('#navmain').addClass('navbar-fixed');
-    }
-else{
-    $('#navmain').removeClass('navbar-fixed');
-}
-   
-  });
-});
+  }
+  
 </script>
+
 </html>

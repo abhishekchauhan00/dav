@@ -21,12 +21,12 @@
     <!--Font awesome icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
-    <title>Rules & Regulations</title>
+    <title>Admission</title>
 
 </head>
 
 <body>
-   <!--Navbar Strip -->
+     <!--Navbar Strip -->
  <nav>
     <div>
         <i class="fa fa-envelope" id="envelope"></i>
@@ -127,37 +127,50 @@
   
 </div>
 <!-- Navbar done -->
-<!-- image header -->
-<div class="image_header">
-<h1>RULES & REGULATIONS</h1>
-</div>
-<div class="content">
-<div class="content_heading">
-<div>
-    <h3 id="a" onclick="a()">School policy & timing</h3>
-    <h3 id="f" onclick="f()">Exam policy</h3>
-    <h3 id="p" onclick="p()">Academic Calender</h3>
-    
-</div>
-</div>
-<div class="content_info">
-<div id="aarti">
-   
-</div>
-<div id="founder"> 
-</div>
-<div id="principle">
+<!-- enquiry form -->
+<h3 class="heading">Admission Query Form</h3>
+<div class="formcontain">
+    <div class="sidebar">
+        <center>
+            <i class="fa fa-envelope-open-o" alt="email" style="font-size: 2rem; padding-top: 1rem;"></i>
+            <h1>For Admission related information, fill this form</h1>
+        </center>
+    </div>
   
-</div>
-<div id="mission">
-    The school management is committed to provide all sauvity and pleasantness for the students, the Principal with his team of diligent, devoted and sincere teachers. All are set to take the school at greater heights.
-</div>
-<div id="award">
+    <div class="mainform">
+    <form method="post" >
+        <div class="textarea" id="firstname">
+            <label class="label">First Name:</label><br>
+            <input type="text" class="entry" placeholder="Enter First Name" name="name">
+        </div>
+        <div class="textarea" id="second name">
+            <label class="label">Second Name:</label><br>
+            <input type="text" class="entry" placeholder="Enter Second Name" name="sname">
+        </div>
+        <div class="textarea" id="classname">
+            <label class="label">Class:</label><br>
+            <input type="text" class="entry" placeholder="Enter Class" name="class">
+        </div>
+        <div class="textarea" id="previousschool">
+            <label class="label">Previous School:</label><br>
+            <input type="text" class="entry" placeholder="Enter Previous School Name" name="school">
+        </div>
+        <div class="textarea" id="phonenumber">
+            <label class="label">Phone Number:</label><br>
+            <input type="text" class="entry" placeholder="Enter Your Phone Number" name="phone">
+        </div>
+        <div class="textarea" id="email">
+            <label class="label">Email ID:</label><br>
+            <input type="email" class="entry" placeholder="Enter Your Email Id" name="email">
+        </div>
+
+        <button class="submitbtn" name="submit">Submit</button>
+        </form>
+    </div>
 
 </div>
-</div>
-</div>
-   <!-- footer -->
+    <!-- footer main -->
+     <!-- footer -->
 <div class="footer ">
     <div class="contact ">
         <i class="fa fa-map-marker " id="l " aria-hidden="true "></i>
@@ -184,6 +197,65 @@
 <!-- footer close -->
 </body>
 <script>
+function myfunction() {
+    document.getElementById('menuitems').style.display = 'block';
+    document.getElementById('menubar').style.display = 'none';
+    document.getElementById('menubar1').style.display = 'block';
+}
+
+function myfunctions() {
+    document.getElementById('menuitems').style.display = 'none';
+    document.getElementById('menubar').style.display = 'block';
+    document.getElementById('menubar1').style.display = 'none';
+}
+
+    $(document).ready(function() {
+
+$(window).scroll(function () { 
+
+console.log($(window).scrollTop());
+
+if ($(window).scrollTop() > 10) {
+  $('#navmain').addClass('navbar-fixed');
+  document.getElementById('menubar').style.top = '1.2rem';
+  document.getElementById('menubar1').style.top = '1.2rem';
+  document.getElementById('menuitems').style.top = '4rem';
+}
+else{
+$('#navmain').removeClass('navbar-fixed');
+document.getElementById('menubar').style.top = '3.1rem';
+document.getElementById('menubar1').style.top = '3.1rem';
+document.getElementById('menuitems').style.top = '6rem';
+}
+
+});
+});
+</script>
+<script>
+    $(document).ready(function() {
+  
+  $(window).scroll(function () { 
+
+    console.log($(window).scrollTop());
+
+    if ($(window).scrollTop() > 10) {
+      $('#navmain').addClass('navbar-fixed');
+      document.getElementById('menubar').style.top = '1.2rem';
+      document.getElementById('menubar1').style.top = '1.2rem';
+      document.getElementById('menuitems').style.top = '4rem';
+    }
+else{
+    $('#navmain').removeClass('navbar-fixed');
+    document.getElementById('menubar').style.top = '3.1rem';
+    document.getElementById('menubar1').style.top = '3.1rem';
+    document.getElementById('menuitems').style.top = '6rem';
+}
+   
+  });
+});
+</script>
+<!-- menubar script -->
+<script>
     function myfunction() {
         document.getElementById('menuitems').style.display = 'block';
         document.getElementById('menubar').style.display = 'none';
@@ -195,89 +267,5 @@
         document.getElementById('menubar').style.display = 'block';
         document.getElementById('menubar1').style.display = 'none';
     }
-</script>
-<script>
-    function a(){
-        document.getElementById('f').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('a').style.cssText = 'background-color: var(--primary);color:var(--secondary)' ;
-        document.getElementById('p').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('m').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('aw').style.cssText ='background-color: transparent; color:whitesmoke';
-
-  document.getElementById('founder').style.display = 'none';
-  document.getElementById('aarti').style.display ='block';
-  document.getElementById('principle').style.display = 'none';
-  document.getElementById('mission').style.display = 'none';
-  document.getElementById('award').style.display = 'none';
-    }
-    function f(){
-        document.getElementById('a').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('f').style.cssText = 'background-color: var(--primary);color:var(--secondary)' ;
-        document.getElementById('p').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('m').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('aw').style.cssText ='background-color: transparent; color:whitesmoke';
- 
-  document.getElementById('aarti').style.display = 'none';
-  document.getElementById('founder').style.display ='block';
-  document.getElementById('principle').style.display = 'none';
-  document.getElementById('mission').style.display = 'none';
-  document.getElementById('award').style.display = 'none';
-  }
-  function p(){
-    document.getElementById('a').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('p').style.cssText = 'background-color: var(--primary);color:var(--secondary)' ;
-        document.getElementById('f').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('m').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('aw').style.cssText ='background-color: transparent; color:whitesmoke';
-  
-        document.getElementById('aarti').style.display = 'none';
-   document.getElementById('principle').style.display ='block';
-  document.getElementById('founder').style.display = 'none';
-  document.getElementById('mission').style.display = 'none';
-  document.getElementById('award').style.display = 'none';
-  }
-  function m(){
-    document.getElementById('a').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('m').style.cssText = 'background-color: var(--primary);color:var(--secondary)' ;
-        document.getElementById('p').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('f').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('aw').style.cssText ='background-color: transparent; color:whitesmoke';
-  
-        document.getElementById('aarti').style.display = 'none';
-  document.getElementById('mission').style.display ='block';
-  document.getElementById('principle').style.display = 'none';
-  document.getElementById('founder').style.display = 'none';
-  document.getElementById('award').style.display = 'none';
-  }
-  function aw(){
-    document.getElementById('a').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('aw').style.cssText = 'background-color: var(--primary);color:var(--secondary)' ;
-        document.getElementById('p').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('m').style.cssText ='background-color: transparent; color:whitesmoke';
-        document.getElementById('f').style.cssText ='background-color: transparent; color:whitesmoke';
- 
-        document.getElementById('aarti').style.display = 'none';
-   document.getElementById('award').style.display ='block';
-  document.getElementById('principle').style.display = 'none';
-  document.getElementById('mission').style.display = 'none';
-  document.getElementById('founder').style.display = 'none';
-  }
-</script>
-<script>
-    $(document).ready(function() {
-  
-  $(window).scroll(function () { 
-
-    console.log($(window).scrollTop());
-
-    if ($(window).scrollTop() > 10) {
-      $('#navmain').addClass('navbar-fixed');
-    }
-else{
-    $('#navmain').removeClass('navbar-fixed');
-}
-   
-  });
-});
 </script>
 </html>
