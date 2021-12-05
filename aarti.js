@@ -41,7 +41,8 @@ $('#activity .owl-carousel').owlCarousel({
 const cats = [
 "images/b1.jpeg",
 "images/b-2.jpeg",
-"images/b-3.jpeg"
+"images/b-3.jpeg",
+"images/b-6.jpeg"
 
 ]
 
